@@ -1,0 +1,154 @@
+\hypertarget{class_staff}{}\doxysection{Staff Class Reference}
+\label{class_staff}\index{Staff@{Staff}}
+
+
+Class that represents a worker at the park.  
+
+
+
+
+{\ttfamily \#include $<$Staff.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_staff_ae2b539384c7e65d59772bb6ea707500d}{Staff}} (const \mbox{\hyperlink{class_staff}{Staff}} \&other)
+\item 
+\mbox{\hyperlink{class_staff}{Staff}} \& \mbox{\hyperlink{class_staff_add541e2be6ebc41c0cd0865101c4f419}{operator=}} (const \mbox{\hyperlink{class_staff}{Staff}} \&other)
+\item 
+\mbox{\hyperlink{class_staff_a2130fbfe66c795d2f33800fedd5025d0}{Staff}} (const char $\ast$new\+Worker\+Name, int new\+Age, position new\+Work\+Position)
+\begin{DoxyCompactList}\small\item\em constructor with all given information \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_staff_aec0b1aa90ac7c2b57d5fcb4e2ed8aaec}{set\+Worker\+Name}} (const char $\ast$new\+Worker\+Name)
+\item 
+\mbox{\Hypertarget{class_staff_a091c6d02b6199ac128f5c564590ba15c}\label{class_staff_a091c6d02b6199ac128f5c564590ba15c}} 
+const char $\ast$ {\bfseries get\+Worker\+Name} () const
+\item 
+\mbox{\Hypertarget{class_staff_addb855bf1028f4e52082c81d2c20e9dd}\label{class_staff_addb855bf1028f4e52082c81d2c20e9dd}} 
+void {\bfseries set\+Age} (int new\+Age)
+\item 
+\mbox{\Hypertarget{class_staff_a5e169af48af2a36baf3c074e7877b05b}\label{class_staff_a5e169af48af2a36baf3c074e7877b05b}} 
+int {\bfseries get\+Age} () const
+\item 
+void \mbox{\hyperlink{class_staff_a55510cc6375f9a78ac5d689140db9672}{set\+Work\+Position}} (position new\+Work\+Position)
+\item 
+\mbox{\Hypertarget{class_staff_a2893ba96d87ecf80868e5432781f7718}\label{class_staff_a2893ba96d87ecf80868e5432781f7718}} 
+position {\bfseries get\+Work\+Position} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_staff_a5397f9384d4058ed3b68f40682ede1ca}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_staff}{Staff}} \&other)
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{class_staff_a57a231e83074bf1dfea6c7f917622cc6}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_staff}{Staff}} \&other)
+\begin{DoxyCompactList}\small\item\em operator $>$$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents a worker at the park. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_staff_ae2b539384c7e65d59772bb6ea707500d}\label{class_staff_ae2b539384c7e65d59772bb6ea707500d}} 
+\index{Staff@{Staff}!Staff@{Staff}}
+\index{Staff@{Staff}!Staff@{Staff}}
+\doxysubsubsection{\texorpdfstring{Staff()}{Staff()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Staff\+::\+Staff (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_staff}{Staff}} \&}]{other }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & copy constructor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staff_a2130fbfe66c795d2f33800fedd5025d0}\label{class_staff_a2130fbfe66c795d2f33800fedd5025d0}} 
+\index{Staff@{Staff}!Staff@{Staff}}
+\index{Staff@{Staff}!Staff@{Staff}}
+\doxysubsubsection{\texorpdfstring{Staff()}{Staff()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Staff\+::\+Staff (\begin{DoxyParamCaption}\item[{const char $\ast$}]{new\+Worker\+Name,  }\item[{int}]{new\+Age,  }\item[{position}]{new\+Work\+Position }\end{DoxyParamCaption})}
+
+
+
+constructor with all given information 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Work\+Position} & constructor with given name, age and position \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_staff_add541e2be6ebc41c0cd0865101c4f419}\label{class_staff_add541e2be6ebc41c0cd0865101c4f419}} 
+\index{Staff@{Staff}!operator=@{operator=}}
+\index{operator=@{operator=}!Staff@{Staff}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_staff}{Staff}} \& Staff\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_staff}{Staff}} \&}]{other }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & operator = \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staff_aec0b1aa90ac7c2b57d5fcb4e2ed8aaec}\label{class_staff_aec0b1aa90ac7c2b57d5fcb4e2ed8aaec}} 
+\index{Staff@{Staff}!setWorkerName@{setWorkerName}}
+\index{setWorkerName@{setWorkerName}!Staff@{Staff}}
+\doxysubsubsection{\texorpdfstring{setWorkerName()}{setWorkerName()}}
+{\footnotesize\ttfamily void Staff\+::set\+Worker\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{new\+Worker\+Name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Worker\+Name} & setters and getters \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staff_a55510cc6375f9a78ac5d689140db9672}\label{class_staff_a55510cc6375f9a78ac5d689140db9672}} 
+\index{Staff@{Staff}!setWorkPosition@{setWorkPosition}}
+\index{setWorkPosition@{setWorkPosition}!Staff@{Staff}}
+\doxysubsubsection{\texorpdfstring{setWorkPosition()}{setWorkPosition()}}
+{\footnotesize\ttfamily void Staff\+::set\+Work\+Position (\begin{DoxyParamCaption}\item[{position}]{new\+Work\+Position }\end{DoxyParamCaption})}
+
+$<$ switch for the enum type data
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_staff_a5397f9384d4058ed3b68f40682ede1ca}\label{class_staff_a5397f9384d4058ed3b68f40682ede1ca}} 
+\index{Staff@{Staff}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Staff@{Staff}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_staff}{Staff}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+operator $<$$<$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & operator $<$$<$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_staff_a57a231e83074bf1dfea6c7f917622cc6}\label{class_staff_a57a231e83074bf1dfea6c7f917622cc6}} 
+\index{Staff@{Staff}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Staff@{Staff}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_staff}{Staff}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+operator $>$$>$ 
+
+$<$ because switch is used, the user choice must be saved as int
+
+$<$ static memory is used, to prevent memory leak from happening
+
+$<$ flag
+
+$<$ the loop goes on until the user inputs the correct data
+
+$<$ the loop goes on until the user inputs the correct data
+
+$<$ compares the input to the options
+
+$<$ verification if position matches one of the options
+
+$<$ the flag is true to stop the loop
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Staff.\+h\item 
+Staff.\+cpp\end{DoxyCompactItemize}

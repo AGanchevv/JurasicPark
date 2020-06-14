@@ -1,0 +1,404 @@
+\hypertarget{class_cell}{}\doxysection{Cell Class Reference}
+\label{class_cell}\index{Cell@{Cell}}
+
+
+$<$\mbox{\hyperlink{_enumerators_8h_source}{Enumerators.\+h}} does not has to be included, because \mbox{\hyperlink{_dinosaur_8h_source}{Dinosaur.\+h}} contains it  
+
+
+
+
+{\ttfamily \#include $<$Cell.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cell_a5f7e1f953c71c7421726dc6af263e467}{Cell}} (const \mbox{\hyperlink{class_cell}{Cell}} \&other)
+\item 
+\mbox{\hyperlink{class_cell}{Cell}} \& \mbox{\hyperlink{class_cell_ac1c53fcae0c0be453d0312310ed80fc9}{operator=}} (const \mbox{\hyperlink{class_cell}{Cell}} \&other)
+\item 
+\mbox{\hyperlink{class_cell_ab80fa49f435b59079c4f67d07db911b7}{Cell}} (size new\+Cell\+Size, era new\+Dinosaurs\+Era)
+\begin{DoxyCompactList}\small\item\em constructor with only size and era \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell_ac559d4320ab7e17500bf5a7db971d447}{Cell}} (size new\+Cell\+Size, climate new\+Dinosaurs\+Climate)
+\begin{DoxyCompactList}\small\item\em setters and getters \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a5520c9ac0962af30ecc8790778c2eef6}{set\+Cell\+Size}} (size new\+Cell\+Size)
+\item 
+\mbox{\Hypertarget{class_cell_aa599ed93e3fd8bd507b5b80f028bd272}\label{class_cell_aa599ed93e3fd8bd507b5b80f028bd272}} 
+size {\bfseries get\+Cell\+Size} () const
+\item 
+\mbox{\Hypertarget{class_cell_a21cacf8ca36be69a8f9ceb5fdf766765}\label{class_cell_a21cacf8ca36be69a8f9ceb5fdf766765}} 
+void {\bfseries set\+Capacity} (int new\+Capacity)
+\item 
+\mbox{\Hypertarget{class_cell_a4abd9bbf692647bac6ae41e2edf252ac}\label{class_cell_a4abd9bbf692647bac6ae41e2edf252ac}} 
+int {\bfseries get\+Capacity} () const
+\item 
+\mbox{\Hypertarget{class_cell_a02decba012060055768352ce1df3ac08}\label{class_cell_a02decba012060055768352ce1df3ac08}} 
+void {\bfseries set\+Number\+Of\+Dinosaurs} (int new\+Number\+Of\+Dinosaurs)
+\item 
+\mbox{\Hypertarget{class_cell_a907211f1533d7ee5c7f145eb2132a56f}\label{class_cell_a907211f1533d7ee5c7f145eb2132a56f}} 
+int {\bfseries get\+Number\+Of\+Dinosaurs} () const
+\item 
+void \mbox{\hyperlink{class_cell_a2aba313a010ffe608c2475f2c2ecc92d}{set\+Dinosaurs\+Discharge}} (discharge new\+Dinosaurs\+Discharge)
+\item 
+\mbox{\Hypertarget{class_cell_a2d3a8ad71d4c632cb133e1db63114afb}\label{class_cell_a2d3a8ad71d4c632cb133e1db63114afb}} 
+discharge {\bfseries get\+Dinosaurs\+Discharge} () const
+\item 
+void \mbox{\hyperlink{class_cell_ab7b72b0988dbe5c1eccaa68b6e2c77ec}{set\+Dinosaurs\+Climate}} (climate new\+Dinosaurs\+Climate)
+\item 
+\mbox{\Hypertarget{class_cell_afe83649b11a33602f5bcf17e14bb47f1}\label{class_cell_afe83649b11a33602f5bcf17e14bb47f1}} 
+climate {\bfseries get\+Dinosaurs\+Climate} () const
+\item 
+void \mbox{\hyperlink{class_cell_a4c2c82d1b8440fe8919c9951ada6fe88}{set\+Dinosaurs\+Era}} (era new\+Dinosaurs\+Era)
+\item 
+\mbox{\Hypertarget{class_cell_a1e0ff3096852dbc86a098b2e43e1e2fa}\label{class_cell_a1e0ff3096852dbc86a098b2e43e1e2fa}} 
+era {\bfseries get\+Dinosaurs\+Era} () const
+\item 
+bool \mbox{\hyperlink{class_cell_a831bdaf51e4ba9c3a2c9faf1ad9ae219}{add\+Dinosaur}} (const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&other)
+\begin{DoxyCompactList}\small\item\em addes a new dinosaur to the cell \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a4d50aeea7cc20e2beb780f910d7dbd40}{remove\+Dinosaur}} (const char $\ast$other)
+\begin{DoxyCompactList}\small\item\em removes a dinosaur from the cell \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_a64358f47f3cdf477715a6757fd197795}{enough\+Space}} ()
+\begin{DoxyCompactList}\small\item\em verification if there is enough space to add a new dinosaur \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dinosaur}{Dinosaur}} $\ast$ \mbox{\hyperlink{class_cell_a4a08fe3bf62a9b61cd5753a3ef16e3cd}{all\+Dinosaurs}} () const
+\begin{DoxyCompactList}\small\item\em returns all dinosaurs in cage \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_a45f847b558bba3f3f2a121a158b2af2e}{is\+Dinosaur\+Here}} (const char $\ast$other)
+\item 
+bool \mbox{\hyperlink{class_cell_a053eb7308ccb49e2f84f23ccc05486c8}{compare\+Dinosaur\+Era}} (const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&other)
+\begin{DoxyCompactList}\small\item\em compares dinosaur era with cell\textquotesingle{}s era \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_ac6e2b9f52c8cb8b49f664631c976b018}{check\+Index}} (int volume, const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&other)
+\begin{DoxyCompactList}\small\item\em verification if a dinosaur can be added to the cell \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_a7b9e067e7294789ea079a8670052a2a1}{first\+Dinosaur\+In\+Cell}} (const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&other)
+\begin{DoxyCompactList}\small\item\em enteres first dinosaur \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_aa4046e2ed23d7f0f0c55a14a5e7bec9a}{another\+Dinosaur\+In\+Cell}} (const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&other)
+\begin{DoxyCompactList}\small\item\em enteres dinosaur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_cell_a0a05bf1517951b00353a0b4c0522e0b8}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_cell}{Cell}} \&other)
+\begin{DoxyCompactList}\small\item\em output operator \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{class_cell_a3be1096578ff09fc1c71251cc54a0ba0}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_cell}{Cell}} \&other)
+\begin{DoxyCompactList}\small\item\em input operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+$<$\mbox{\hyperlink{_enumerators_8h_source}{Enumerators.\+h}} does not has to be included, because \mbox{\hyperlink{_dinosaur_8h_source}{Dinosaur.\+h}} contains it 
+
+Class that represents a cell and it\textquotesingle{}s residents 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cell_a5f7e1f953c71c7421726dc6af263e467}\label{class_cell_a5f7e1f953c71c7421726dc6af263e467}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell}{Cell}} \&}]{other }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & copy constructor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_ab80fa49f435b59079c4f67d07db911b7}\label{class_cell_ab80fa49f435b59079c4f67d07db911b7}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{size}]{new\+Cell\+Size,  }\item[{era}]{new\+Dinosaurs\+Era }\end{DoxyParamCaption})}
+
+
+
+constructor with only size and era 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Dinosaurs\+Era} & constructor with only given size and era \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_ac559d4320ab7e17500bf5a7db971d447}\label{class_cell_ac559d4320ab7e17500bf5a7db971d447}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{size}]{new\+Cell\+Size,  }\item[{climate}]{new\+Dinosaurs\+Climate }\end{DoxyParamCaption})}
+
+
+
+setters and getters 
+
+constructor with size and climate 
+\begin{DoxyParams}{Parameters}
+{\em new\+Dinosaurs\+Climate} & constructor with only given size and climate \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cell_a831bdaf51e4ba9c3a2c9faf1ad9ae219}\label{class_cell_a831bdaf51e4ba9c3a2c9faf1ad9ae219}} 
+\index{Cell@{Cell}!addDinosaur@{addDinosaur}}
+\index{addDinosaur@{addDinosaur}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{addDinosaur()}{addDinosaur()}}
+{\footnotesize\ttfamily bool Cell\+::add\+Dinosaur (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+addes a new dinosaur to the cell 
+
+$<$ variable which saves the cell size
+
+$<$ switch to check cell maximum capacity
+
+$<$ verification if the cell is suitable for this dinosaur
+
+$<$ and the cell is empty
+
+$<$ enteres first dinosaur
+
+$<$ verification if the cell is suitable for this dinosaur
+
+$<$ and the cell is not empty
+
+$<$ enteres dinosaur
+\begin{DoxyParams}{Parameters}
+{\em other} & adds new dinosaur in cell \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_a4a08fe3bf62a9b61cd5753a3ef16e3cd}\label{class_cell_a4a08fe3bf62a9b61cd5753a3ef16e3cd}} 
+\index{Cell@{Cell}!allDinosaurs@{allDinosaurs}}
+\index{allDinosaurs@{allDinosaurs}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{allDinosaurs()}{allDinosaurs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dinosaur}{Dinosaur}} $\ast$ Cell\+::all\+Dinosaurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+returns all dinosaurs in cage 
+
+$<$ returns all dinosaurs \mbox{\Hypertarget{class_cell_aa4046e2ed23d7f0f0c55a14a5e7bec9a}\label{class_cell_aa4046e2ed23d7f0f0c55a14a5e7bec9a}} 
+\index{Cell@{Cell}!anotherDinosaurInCell@{anotherDinosaurInCell}}
+\index{anotherDinosaurInCell@{anotherDinosaurInCell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{anotherDinosaurInCell()}{anotherDinosaurInCell()}}
+{\footnotesize\ttfamily bool Cell\+::another\+Dinosaur\+In\+Cell (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+enteres dinosaur 
+
+$<$ compares dinosaur\textquotesingle{}s era and discharge with the era and discharge from the dinosaurs in the cell
+
+$<$ checks if the capacity must be increased
+
+$<$ increases cell\textquotesingle{}s capacity
+
+$<$ if the era or discharge don\textquotesingle{}t compare
+\begin{DoxyParams}{Parameters}
+{\em other} & enteres dinosaur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_ac6e2b9f52c8cb8b49f664631c976b018}\label{class_cell_ac6e2b9f52c8cb8b49f664631c976b018}} 
+\index{Cell@{Cell}!checkIndex@{checkIndex}}
+\index{checkIndex@{checkIndex}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{checkIndex()}{checkIndex()}}
+{\footnotesize\ttfamily bool Cell\+::check\+Index (\begin{DoxyParamCaption}\item[{int}]{volume,  }\item[{const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+verification if a dinosaur can be added to the cell 
+
+$<$ compares cells max capacity with current dinosaurs number
+
+$<$ verifications if the climate is suitable for dinosaur\textquotesingle{}s discharge
+\begin{DoxyParams}{Parameters}
+{\em other} & checks if a dinosaur can be added to the cell \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_a053eb7308ccb49e2f84f23ccc05486c8}\label{class_cell_a053eb7308ccb49e2f84f23ccc05486c8}} 
+\index{Cell@{Cell}!compareDinosaurEra@{compareDinosaurEra}}
+\index{compareDinosaurEra@{compareDinosaurEra}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{compareDinosaurEra()}{compareDinosaurEra()}}
+{\footnotesize\ttfamily bool Cell\+::compare\+Dinosaur\+Era (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+compares dinosaur era with cell\textquotesingle{}s era 
+
+$<$ case for trias
+
+$<$ case for chalk
+
+$<$ case for jura
+\begin{DoxyParams}{Parameters}
+{\em other} & compares dinosaur era with cell\textquotesingle{}s era \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_a64358f47f3cdf477715a6757fd197795}\label{class_cell_a64358f47f3cdf477715a6757fd197795}} 
+\index{Cell@{Cell}!enoughSpace@{enoughSpace}}
+\index{enoughSpace@{enoughSpace}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{enoughSpace()}{enoughSpace()}}
+{\footnotesize\ttfamily bool Cell\+::enough\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+verification if there is enough space to add a new dinosaur 
+
+$<$ maximum cell capacity
+
+$<$ checks if the current dinosaurs number is lower than max capacity\mbox{\Hypertarget{class_cell_a7b9e067e7294789ea079a8670052a2a1}\label{class_cell_a7b9e067e7294789ea079a8670052a2a1}} 
+\index{Cell@{Cell}!firstDinosaurInCell@{firstDinosaurInCell}}
+\index{firstDinosaurInCell@{firstDinosaurInCell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{firstDinosaurInCell()}{firstDinosaurInCell()}}
+{\footnotesize\ttfamily bool Cell\+::first\+Dinosaur\+In\+Cell (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+enteres first dinosaur 
+
+$<$ increases cell capacity
+
+$<$ sets the era in the cell
+
+$<$ sets the discharge in the cell
+\begin{DoxyParams}{Parameters}
+{\em other} & enteres first dinosaur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_a45f847b558bba3f3f2a121a158b2af2e}\label{class_cell_a45f847b558bba3f3f2a121a158b2af2e}} 
+\index{Cell@{Cell}!isDinosaurHere@{isDinosaurHere}}
+\index{isDinosaurHere@{isDinosaurHere}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isDinosaurHere()}{isDinosaurHere()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Dinosaur\+Here (\begin{DoxyParamCaption}\item[{const char $\ast$}]{other }\end{DoxyParamCaption})}
+
+checks if a certain dinosaur is in the cage by given dinosaur name $<$ compares the given name with the current dinosaurs name
+
+$<$ if it matches, the function returns true
+\begin{DoxyParams}{Parameters}
+{\em other} & searches by given name if the cage contains dinosaur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_ac1c53fcae0c0be453d0312310ed80fc9}\label{class_cell_ac1c53fcae0c0be453d0312310ed80fc9}} 
+\index{Cell@{Cell}!operator=@{operator=}}
+\index{operator=@{operator=}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} \& Cell\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell}{Cell}} \&}]{other }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & operator = \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_a4d50aeea7cc20e2beb780f910d7dbd40}\label{class_cell_a4d50aeea7cc20e2beb780f910d7dbd40}} 
+\index{Cell@{Cell}!removeDinosaur@{removeDinosaur}}
+\index{removeDinosaur@{removeDinosaur}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{removeDinosaur()}{removeDinosaur()}}
+{\footnotesize\ttfamily void Cell\+::remove\+Dinosaur (\begin{DoxyParamCaption}\item[{const char $\ast$}]{other }\end{DoxyParamCaption})}
+
+
+
+removes a dinosaur from the cell 
+
+$<$ variable for the dinosaurs index
+
+$<$ verification if the given name matches with
+
+$<$ some dinosaurs name from the cell
+
+$<$ index of the dinosaur with the same name
+
+$<$ when the index is found there is no point from searching anymore, so \char`\"{}break\char`\"{} stops the loop
+
+$<$ verification if any dinosaur matched the searched name
+
+$<$ the loop starts from the dinosaur with the searched name
+
+$<$ rewrites every dinosaurs data with the next dinosaurs data
+
+$<$ reduces dinosaurs number
+
+$<$ decreases cell capacity
+\begin{DoxyParams}{Parameters}
+{\em other} & removes already existing in the cell dinosaur by given dinosaurs name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_a5520c9ac0962af30ecc8790778c2eef6}\label{class_cell_a5520c9ac0962af30ecc8790778c2eef6}} 
+\index{Cell@{Cell}!setCellSize@{setCellSize}}
+\index{setCellSize@{setCellSize}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setCellSize()}{setCellSize()}}
+{\footnotesize\ttfamily void Cell\+::set\+Cell\+Size (\begin{DoxyParamCaption}\item[{size}]{new\+Cell\+Size }\end{DoxyParamCaption})}
+
+$<$ switch must be used to set value for enumerators\mbox{\Hypertarget{class_cell_ab7b72b0988dbe5c1eccaa68b6e2c77ec}\label{class_cell_ab7b72b0988dbe5c1eccaa68b6e2c77ec}} 
+\index{Cell@{Cell}!setDinosaursClimate@{setDinosaursClimate}}
+\index{setDinosaursClimate@{setDinosaursClimate}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setDinosaursClimate()}{setDinosaursClimate()}}
+{\footnotesize\ttfamily void Cell\+::set\+Dinosaurs\+Climate (\begin{DoxyParamCaption}\item[{climate}]{new\+Dinosaurs\+Climate }\end{DoxyParamCaption})}
+
+$<$ switch must be used to set value for enumerators\mbox{\Hypertarget{class_cell_a2aba313a010ffe608c2475f2c2ecc92d}\label{class_cell_a2aba313a010ffe608c2475f2c2ecc92d}} 
+\index{Cell@{Cell}!setDinosaursDischarge@{setDinosaursDischarge}}
+\index{setDinosaursDischarge@{setDinosaursDischarge}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setDinosaursDischarge()}{setDinosaursDischarge()}}
+{\footnotesize\ttfamily void Cell\+::set\+Dinosaurs\+Discharge (\begin{DoxyParamCaption}\item[{discharge}]{new\+Dinosaurs\+Discharge }\end{DoxyParamCaption})}
+
+$<$ switch must be used to set value for enumerators\mbox{\Hypertarget{class_cell_a4c2c82d1b8440fe8919c9951ada6fe88}\label{class_cell_a4c2c82d1b8440fe8919c9951ada6fe88}} 
+\index{Cell@{Cell}!setDinosaursEra@{setDinosaursEra}}
+\index{setDinosaursEra@{setDinosaursEra}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setDinosaursEra()}{setDinosaursEra()}}
+{\footnotesize\ttfamily void Cell\+::set\+Dinosaurs\+Era (\begin{DoxyParamCaption}\item[{era}]{new\+Dinosaurs\+Era }\end{DoxyParamCaption})}
+
+$<$ switch must be used to set value for enumerators
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_cell_a0a05bf1517951b00353a0b4c0522e0b8}\label{class_cell_a0a05bf1517951b00353a0b4c0522e0b8}} 
+\index{Cell@{Cell}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_cell}{Cell}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+output operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & operator $<$$<$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cell_a3be1096578ff09fc1c71251cc54a0ba0}\label{class_cell_a3be1096578ff09fc1c71251cc54a0ba0}} 
+\index{Cell@{Cell}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_cell}{Cell}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+input operator 
+
+$<$ because switch is used, the user choice must be saved as int
+
+$<$ static memory is used, to prevent memory leak from happening
+
+$<$ flags
+
+$<$ the loop goes on until the user inputs the correct data
+
+$<$ compares the input to the options
+
+$<$ verification if size matches one of the options
+
+$<$ the flag is true to stop the loop
+
+$<$ sets size
+
+$<$ sets capacity
+
+$<$ similar as the verification for the size above
+
+$<$ similar as the verification for the era above
+
+$<$ similar as the verification for the discharge above
+
+$<$ each time adds memory for a new dinosaur
+
+$<$ the first dinosaur
+\begin{DoxyParams}{Parameters}
+{\em other} & operator $>$$>$ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Cell.\+h\item 
+Cell.\+cpp\end{DoxyCompactItemize}

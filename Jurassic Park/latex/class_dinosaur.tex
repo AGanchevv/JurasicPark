@@ -1,0 +1,180 @@
+\hypertarget{class_dinosaur}{}\doxysection{Dinosaur Class Reference}
+\label{class_dinosaur}\index{Dinosaur@{Dinosaur}}
+
+
+$<$ includes the enumarators, so different types of data can be used  
+
+
+
+
+{\ttfamily \#include $<$Dinosaur.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dinosaur_a673ab300677df2e7df0d484f698d5c56}{Dinosaur}} (const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&other)
+\item 
+\mbox{\hyperlink{class_dinosaur}{Dinosaur}} \& \mbox{\hyperlink{class_dinosaur_a016e1ecda7ec522ed39e9b9b153a3cca}{operator=}} (const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&other)
+\item 
+\mbox{\hyperlink{class_dinosaur_af504c204c852b0241afd6fe1620ac7ea}{Dinosaur}} (const char $\ast$new\+Name, char new\+Gender, era new\+Dinosaur\+Era, discharge new\+Dinosaur\+Discharge, const char $\ast$new\+Type)
+\begin{DoxyCompactList}\small\item\em setters and getters for the data in private \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dinosaur_add25ae3a4f7ba38eaa6cd89a67e5cba2}{set\+Name}} (const char $\ast$new\+Name)
+\item 
+\mbox{\Hypertarget{class_dinosaur_a1dc6e1081b5c980805e9d514091ada91}\label{class_dinosaur_a1dc6e1081b5c980805e9d514091ada91}} 
+const char $\ast$ {\bfseries get\+Name} () const
+\item 
+\mbox{\Hypertarget{class_dinosaur_a246ec3fbd8b4ab4cb069f7183cc568b7}\label{class_dinosaur_a246ec3fbd8b4ab4cb069f7183cc568b7}} 
+void {\bfseries set\+Gender} (char new\+Gender)
+\item 
+\mbox{\Hypertarget{class_dinosaur_aba9d7bed47b8a838f752eab8dd03d382}\label{class_dinosaur_aba9d7bed47b8a838f752eab8dd03d382}} 
+char {\bfseries get\+Gender} () const
+\item 
+void \mbox{\hyperlink{class_dinosaur_a8da5fa5fdc62a2bc7d340249bcfec306}{set\+Dinosaur\+Era}} (era new\+Dinosaur\+Era)
+\item 
+\mbox{\Hypertarget{class_dinosaur_ac9fc8e261bb04dc616b4b13ec9e86858}\label{class_dinosaur_ac9fc8e261bb04dc616b4b13ec9e86858}} 
+era {\bfseries get\+Dinosaur\+Era} () const
+\item 
+\mbox{\Hypertarget{class_dinosaur_a547d1ba8387425496bba2b0db2f719a4}\label{class_dinosaur_a547d1ba8387425496bba2b0db2f719a4}} 
+void {\bfseries set\+Dinosaur\+Discharge} (discharge new\+Dinosaur\+Discharge)
+\item 
+\mbox{\Hypertarget{class_dinosaur_a33e6ada812be4e1d836db1185be223c7}\label{class_dinosaur_a33e6ada812be4e1d836db1185be223c7}} 
+discharge {\bfseries get\+Dinosaur\+Discharge} () const
+\item 
+\mbox{\Hypertarget{class_dinosaur_a2a37e541135c4f4193cd7802487d56f4}\label{class_dinosaur_a2a37e541135c4f4193cd7802487d56f4}} 
+void {\bfseries set\+Type} (const char $\ast$new\+Type)
+\item 
+\mbox{\Hypertarget{class_dinosaur_aaf667c2dc82594242c7e7ad5591413d1}\label{class_dinosaur_aaf667c2dc82594242c7e7ad5591413d1}} 
+const char $\ast$ {\bfseries get\+Type} () const
+\item 
+\mbox{\Hypertarget{class_dinosaur_aa3c7dd33223bcfdd83c60c79dc5300be}\label{class_dinosaur_aa3c7dd33223bcfdd83c60c79dc5300be}} 
+void {\bfseries set\+Dinosaur\+Food} (int new\+Food)
+\item 
+\mbox{\Hypertarget{class_dinosaur_a555f63403ec6a5f78e996c5694381ced}\label{class_dinosaur_a555f63403ec6a5f78e996c5694381ced}} 
+food {\bfseries get\+Dinosaur\+Food} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_dinosaur_aac608c7a55c4a13637b7fe1511f0fe9b}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&other)
+\begin{DoxyCompactList}\small\item\em output operator \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{class_dinosaur_a3aa8f4774beeb084c19cb43e147f9329}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&other)
+\begin{DoxyCompactList}\small\item\em input operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+$<$ includes the enumarators, so different types of data can be used 
+
+Class that represents a dinosaur 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dinosaur_a673ab300677df2e7df0d484f698d5c56}\label{class_dinosaur_a673ab300677df2e7df0d484f698d5c56}} 
+\index{Dinosaur@{Dinosaur}!Dinosaur@{Dinosaur}}
+\index{Dinosaur@{Dinosaur}!Dinosaur@{Dinosaur}}
+\doxysubsubsection{\texorpdfstring{Dinosaur()}{Dinosaur()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Dinosaur\+::\+Dinosaur (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&}]{other }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & copy constructor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dinosaur_af504c204c852b0241afd6fe1620ac7ea}\label{class_dinosaur_af504c204c852b0241afd6fe1620ac7ea}} 
+\index{Dinosaur@{Dinosaur}!Dinosaur@{Dinosaur}}
+\index{Dinosaur@{Dinosaur}!Dinosaur@{Dinosaur}}
+\doxysubsubsection{\texorpdfstring{Dinosaur()}{Dinosaur()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Dinosaur\+::\+Dinosaur (\begin{DoxyParamCaption}\item[{const char $\ast$}]{new\+Name,  }\item[{char}]{new\+Gender,  }\item[{era}]{new\+Dinosaur\+Era,  }\item[{discharge}]{new\+Dinosaur\+Discharge,  }\item[{const char $\ast$}]{new\+Type }\end{DoxyParamCaption})}
+
+
+
+setters and getters for the data in private 
+
+setters and getters 
+\begin{DoxyParams}{Parameters}
+{\em new\+Type} & constructor with all the data \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dinosaur_a016e1ecda7ec522ed39e9b9b153a3cca}\label{class_dinosaur_a016e1ecda7ec522ed39e9b9b153a3cca}} 
+\index{Dinosaur@{Dinosaur}!operator=@{operator=}}
+\index{operator=@{operator=}!Dinosaur@{Dinosaur}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \& Dinosaur\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&}]{other }\end{DoxyParamCaption})}
+
+$<$ if the condition is not met, then there will be no point of rewriting the data
+
+$<$ because it would be the same
+\begin{DoxyParams}{Parameters}
+{\em other} & operator = \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dinosaur_a8da5fa5fdc62a2bc7d340249bcfec306}\label{class_dinosaur_a8da5fa5fdc62a2bc7d340249bcfec306}} 
+\index{Dinosaur@{Dinosaur}!setDinosaurEra@{setDinosaurEra}}
+\index{setDinosaurEra@{setDinosaurEra}!Dinosaur@{Dinosaur}}
+\doxysubsubsection{\texorpdfstring{setDinosaurEra()}{setDinosaurEra()}}
+{\footnotesize\ttfamily void Dinosaur\+::set\+Dinosaur\+Era (\begin{DoxyParamCaption}\item[{era}]{new\+Dinosaur\+Era }\end{DoxyParamCaption})}
+
+$<$ switch must be used to set value for enumerators\mbox{\Hypertarget{class_dinosaur_add25ae3a4f7ba38eaa6cd89a67e5cba2}\label{class_dinosaur_add25ae3a4f7ba38eaa6cd89a67e5cba2}} 
+\index{Dinosaur@{Dinosaur}!setName@{setName}}
+\index{setName@{setName}!Dinosaur@{Dinosaur}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Dinosaur\+::set\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{new\+Name }\end{DoxyParamCaption})}
+
+$<$ if the condition is not met, then there is no point of deleting not existing memory
+
+$<$ sets aside memory for the new name and determining zero
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_dinosaur_aac608c7a55c4a13637b7fe1511f0fe9b}\label{class_dinosaur_aac608c7a55c4a13637b7fe1511f0fe9b}} 
+\index{Dinosaur@{Dinosaur}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Dinosaur@{Dinosaur}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+output operator 
+
+$<$ again switch must be used for the enumerators
+\begin{DoxyParams}{Parameters}
+{\em other} & operator $<$$<$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dinosaur_a3aa8f4774beeb084c19cb43e147f9329}\label{class_dinosaur_a3aa8f4774beeb084c19cb43e147f9329}} 
+\index{Dinosaur@{Dinosaur}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Dinosaur@{Dinosaur}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_dinosaur}{Dinosaur}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+input operator 
+
+$<$ because switch is used, the user choice must be saved as int
+
+$<$ static memory is used, to prevent memory leak from happening
+
+$<$ flags which are used for the loops
+
+$<$ the loop goes on until the user inputs the correct data
+
+$<$ the user enters data
+
+$<$ checks if the input matches one of the correct choices
+
+$<$ the falg is now true and the loop stops
+
+$<$ similar as the verification for the gender above
+
+$<$ similar as the verification for the era above
+\begin{DoxyParams}{Parameters}
+{\em other} & operator $>$$>$ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dinosaur.\+h\item 
+Dinosaur.\+cpp\end{DoxyCompactItemize}
