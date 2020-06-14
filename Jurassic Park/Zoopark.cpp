@@ -215,7 +215,7 @@ bool Zoopark::enoughStaff() //!< verification if the staff is enough for the amo
 	}
 }
 
-void Zoopark::emplîyedFoodSupplier() //!< shows what kind of workers should be hired
+void Zoopark::employedFoodSupplier() //!< shows what kind of workers should be hired
 {
 	int workersOnFood = 0;
 	workersOnFood = numberWorkersOnFood(); //!< finds amount of workers who give dinosaurs food
@@ -240,7 +240,7 @@ void Zoopark::emplîyedFoodSupplier() //!< shows what kind of workers should be h
 
 void Zoopark::appointStaff() //!< appoints staff
 {
-	emplîyedFoodSupplier();
+	employedFoodSupplier();
 
 	while (enoughStaff() == false) //!< loop stops when there is enough staff
 	{

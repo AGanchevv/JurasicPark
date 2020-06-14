@@ -60,7 +60,7 @@ public:
 
 	void notEnoughStaff(); //!< shows there is enough food, but not enough staff
 	bool enoughStaff(); //!< verification if there is enough staff to look after the dinosaurs
-	void emplîyedFoodSupplier(); //!< shows what kind of workers should be hired
+	void employedFoodSupplier(); //!< shows what kind of workers should be hired
 	void appointStaff(); //!< appoints staff
 
 	void successfullyAddedFood(); //!< shows that the food was successfully added
