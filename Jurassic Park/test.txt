@@ -1,0 +1,38 @@
+Number of created cells: 4
+All cells:
+ 
+Cell size: middle
+Number of dinosaurs: 0
+Dinosaurs era in cage: none
+Dinosaurs discharge: nothing
+Cell climate: land
+Dinosaurs: 
+
+Cell size: small
+Number of dinosaurs: 1
+Dinosaurs era in cage: chalk
+Dinosaurs discharge: aqueous
+Cell climate: water
+Dinosaurs: 
+Dinosaur name: Test1
+Dinosaur gender: m
+Dinosaur Era: chalk
+Dinosaur discharge: aqueous
+Dinosaur type: ok
+Dinosaur food: fish
+
+
+Cell size: big
+Number of dinosaurs: 0
+Dinosaurs era in cage: none
+Dinosaurs discharge: nothing
+Cell climate: airborne
+Dinosaurs: 
+
+Cell size: middle
+Number of dinosaurs: 0
+Dinosaurs era in cage: none
+Dinosaurs discharge: nothing
+Cell climate: land
+Dinosaurs: 
+

@@ -39,14 +39,14 @@ Staff::~Staff() //!< destructor
 	this->destroy();
 }
 
-Staff::Staff(const char * newWorkerName, int newAge, position newWorkPosition) //!< constructor with given name, age and position
+Staff::Staff(const char * newWorkerName, int newAge, position newWorkPosition) //!< general purpose constructor
 {
 	setWorkerName(newWorkerName);
 	setAge(newAge);
 	setWorkPosition(newWorkPosition);
 }
-
-void Staff::setWorkerName(const char * newWorkerName) //!< setters and getters
+//!< setters and getters
+void Staff::setWorkerName(const char * newWorkerName)
 {
 	if (newWorkerName != NULL)
 	{

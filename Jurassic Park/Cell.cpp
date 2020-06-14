@@ -5,15 +5,16 @@ void Cell::increaseCellSize() //!< increases cell capacity
 {
 	this->capacity++;
 
-	Dinosaur* variable = new Dinosaur[this->capacity]; //!< settes aside memory for one more dinosaur
+	Dinosaur* temp = new Dinosaur[this->capacity]; //!< settes aside memory for one more dinosaur
 
 	for (int i = 0; i < this->numberOfDinosaurs; i++)
 	{
-		variable[i] = this->dinosaurs[i];
+		temp[i] = this->dinosaurs[i];
 	}
 
 	this->destroy(); //!< deletes the old information
-	this->dinosaurs = variable; //!< assignes values
+	this->dinosaurs = temp; //!< assignes values
+
 }
 
 void Cell::resinCellSize() //!< decreases cell capacity
@@ -22,15 +23,15 @@ void Cell::resinCellSize() //!< decreases cell capacity
 
 	if (this->numberOfDinosaurs < this->capacity) //!< if the number of dinosaurs is bigger than the capacity
 	{                                             //!< there will be a memory leak
-		Dinosaur* variable = new Dinosaur[this->capacity];
+		Dinosaur* temp = new Dinosaur[this->capacity];
 
 		for (int i = 0; i < this->capacity; i++)
 		{
-			variable[i] = this->dinosaurs[i];
+			temp[i] = this->dinosaurs[i];
 		}
 
 		this->destroy();
-		this->dinosaurs = variable;
+		this->dinosaurs = temp;
 	}
 }
 
