@@ -69,13 +69,14 @@ public:
 	void addFoodByChoice(); //!< adds food by users choice
 	void addFoodNecessary(); //!< adds food because it is necessary in order for dinosaurs to live
 
-
 	void successfullyCreatedCell(); //!< shows that a cell is successfully created
 	void createSpaceForNewCell(const Cell& other); //!< saves a cell in the zoopark memory
 	void randomCells(); //!< creates cell with random size and climate
 	void addCell(); //!< creates cell with whatever data the user chooses
 	
 	void twoOptionMenuDinosaur(); //!< shows two option menu for the user
+	void addFoodOrRemoveDinosaur(const Dinosaur& other, int index); //!< covers the case if there is enough workers but not food
+	void addWorkersOrRemoveDinosaur(const Dinosaur& other, int index); //!< covers the case if there is enough food, but not enough workers
 	void addOrRemoveDinosaur(const Dinosaur& other, int index); //!< creates menu if the user want to add staff and food or remove the dinosaur
 	void loadProvision(const Dinosaur& other, int index); //!< loads food or / and appoints staff to the zoopark
 	void newCellForDinosaur(const Dinosaur& other, bool cell); //!< gives a chance to create and than checks again if it is suitable

@@ -189,6 +189,9 @@ void Zoopark::notEnoughStaff() //!< shows there is enough food, but not enough s
 	std::cout << "| There is enough food, but not enough staff!   |" << std::endl;
 	std::cout << "+-----------------------------------------------+" << std::endl;
 	std::cout << " " << std::endl;
+	std::cout << "You can: " << std::endl;
+	std::cout << "1) Add workers;" << std::endl;
+	std::cout << "2) Remove dinosaur data." << std::endl;
 }
 
 bool Zoopark::enoughStaff() //!< verification if the staff is enough for the amount of dinosaurs
@@ -274,6 +277,10 @@ void Zoopark::notEnoughFood() //!< shows there is enough staff, but not enough f
 	std::cout << "| There is enough staff, but not enough food!   |" << std::endl;
 	std::cout << "+-----------------------------------------------+" << std::endl;
 	std::cout << " " << std::endl;
+	std::cout << "You can: " << std::endl;
+	std::cout << "1) Add food;" << std::endl;
+	std::cout << "2) Remove dinosaur data." << std::endl;
+	
 }
 
 bool Zoopark::enoughFood() //!< verification if there is enough food for every dinosaur
@@ -551,6 +558,76 @@ void Zoopark::twoOptionMenuDinosaur() //!< shows two option menu for the user
 	std::cout << " " << std::endl;
 }
 
+void Zoopark::addFoodOrRemoveDinosaur(const Dinosaur & other, int index) //!< covers the case if there is enough workers, but not enough food
+{
+	int choice = 0; //!< variable for user's choice
+	bool addOrRemove = false; //!< flag
+
+	notEnoughFood(); //!< shows there is not enough food and shows user options to handle it
+
+	while (addOrRemove == false)
+	{
+		std::cout << "Choice(1/2): ";
+		std::cin >> choice;
+
+		if (choice == 1 || choice == 2)
+		{
+			addOrRemove = true; //!< if the input is correct the loop stops
+
+			if (choice == 1)
+			{
+				addFoodNecessary(); //!< adds the minimum necessary amount
+				successfullySavedData(); //!< shows that the data is succcessfully saved
+			}
+			else
+			{
+				notSavedDataStatus();
+				this->cells[index].removeDinosaur(other.getName()); //!< removes the dinosaur from the cage
+			}
+		}
+		else
+		{
+			std::cout << "Choose one of the listed!" << std::endl;
+		}
+	}
+	removeD = true;
+}
+
+void Zoopark::addWorkersOrRemoveDinosaur(const Dinosaur & other, int index) //!< covers the case if there is enough food, but not enough workers
+{
+	int choice = 0; //!< variable for user's choice
+	bool addOrRemove = false; //!< flag
+
+	notEnoughStaff(); //!< shows there is not enough workers and shows user options to handle it
+
+	while (addOrRemove == false)
+	{
+		std::cout << "Choice(1/2): ";
+		std::cin >> choice;
+
+		if (choice == 1 || choice == 2)
+		{
+			addOrRemove = true; //!< if the input is correct the loop stops
+
+			if (choice == 1)
+			{
+				appointStaff(); //!< appoints the minimum necessary amount
+				successfullySavedData(); //!< shows that the data is successfully saved
+			}
+			else
+			{
+				notSavedDataStatus();
+				this->cells[index].removeDinosaur(other.getName()); //!< removes the dinosaur from the cage
+			}
+		}
+		else
+		{
+			std::cout << "Choose one of the listed!" << std::endl;
+		}
+	}
+	removeD = true;
+}
+
 void Zoopark::addOrRemoveDinosaur(const Dinosaur & other, int index) //!< gives the user a choice either the user must add food and staff
 {                                                                    //!< or remove the dinosaur
 	int choice = 0; //!< variable for user's choice
@@ -594,21 +671,11 @@ void Zoopark::loadProvision(const Dinosaur& other, int index) //!< checks if foo
 	{
 		if (enoughFood() == false && enoughStaff() == true) //!< verification if only food should be added
 		{
-			notEnoughFood();
-
-			addFoodNecessary(); //!< adds the minimum necessary amount
-			successfullySavedData(); //!< shows that the data is succcessfully saved
-
-			removeD = true;
+			addFoodOrRemoveDinosaur(other, index); //!< adds enough food or removes dinosaur
 		}
 		else if (enoughFood() == true && enoughStaff() == false) //!< verification if only workers should be added
 		{
-			notEnoughStaff();
-
-			appointStaff(); //!< appoints the minimum necessary amount
-			successfullySavedData(); //!< shows that the data is successfully saved
-
-			removeD = true;
+			addWorkersOrRemoveDinosaur(other, index); //!< adds enough workers or removes dinosaur
 		}
 		else
 		{
